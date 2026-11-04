@@ -1,1 +1,13 @@
-
+# Functional Requirements BSIS
+| ID | Actor | Requirement | Priority |
+|---|---|---|---|
+| FR-PPDB-01 | Pendaftar | Sistem dapat menerima pendaftaran calon santri | MUST |
+| FR-PPDB-02 | PPDB | Sistem dapat menampilkan daftar calon santri | MUST |
+| FR-STD-01 | Admin | Sistem dapat menyimpan data santri | MUST |
+| FR-STD-02 | Admin | Sistem dapat menyimpan data wali | MUST |
+| FR-FIN-01 | Finance | Sistem dapat mengelola tagihan santri | MUST |
+| FR-FIN-02 | Finance | Sistem dapat mencatat pembayaran | MUST |
+| FR-ALL-01 | Allowance Officer | Sistem dapat mencatat transaksi uang jajan | MUST |
+| FR-PAR-01 | Parent | Sistem dapat menampilkan informasi anak | MUST |
+| FR-REP-01 | Admin | Sistem dapat menampilkan laporan | SHOULD |
+| FR-ADM-01 | Super Admin | Sistem dapat mengelola pengguna dan role | MUST |
