@@ -1,1 +1,31 @@
+# NONFUNCTIONAL REQUIREMENTS BSIS
 
+## 1. Tujuan
+Dokumen ini menjelaskan kebutuhan nonfungsional yang harus dipenuhi oleh BoardingSchool Information System (BSIS) agar sistem dapat digunakan dengan aman, nyaman, dan sesuai kebutuhan.
+
+## 2. Daftar Kebutuhan Nonfungsional
+
+| ID | Kategori | Kebutuhan Nonfungsional | Prioritas |
+|---|---|---|---|
+| NFR-01 | Keamanan | Sistem harus menyediakan autentikasi login untuk pengguna yang membutuhkan akses khusus. | MUST |
+| NFR-02 | Otorisasi | Sistem harus membatasi akses berdasarkan role dan hak akses masing-masing pengguna. | MUST |
+| NFR-03 | Privasi | Orang tua hanya boleh melihat data santri yang memiliki hubungan wali-santri dengannya. | MUST |
+| NFR-04 | Integritas Data | Sistem harus menjaga konsistensi data santri, tagihan, pembayaran, dan transaksi uang jajan. | MUST |
+| NFR-05 | Validasi | Sistem harus memvalidasi input pengguna sebelum data disimpan. | MUST |
+| NFR-06 | Kemudahan Penggunaan | Antarmuka sistem harus mudah dipahami dan digunakan oleh setiap jenis pengguna. | SHOULD |
+| NFR-07 | Responsivitas | Tampilan sistem harus dapat menyesuaikan ukuran layar komputer, tablet, dan perangkat seluler. | SHOULD |
+| NFR-08 | Kinerja | Sistem harus mampu menampilkan informasi dan memproses permintaan pengguna dalam waktu yang wajar. | SHOULD |
+| NFR-09 | Auditabilitas | Perubahan role dan transaksi penting harus dapat ditelusuri melalui identitas pelaku dan waktu perubahan. | MUST |
+| NFR-10 | Pemeliharaan | Sistem harus memiliki struktur pengembangan yang terorganisasi agar mudah diperbaiki dan dikembangkan. | SHOULD |
+
+## 3. Aturan Keamanan dan Integritas
+1. Pengguna harus melakukan login sebelum mengakses halaman internal.
+2. Hak akses ditentukan berdasarkan role pengguna.
+3. Menyembunyikan menu bukan pengganti pemeriksaan hak akses pada backend.
+4. Data pribadi santri dan orang tua tidak boleh ditampilkan kepada pengguna yang tidak berwenang.
+5. Saldo uang jajan harus dihitung berdasarkan catatan transaksi.
+6. Koreksi transaksi harus meninggalkan jejak perubahan.
+7. Data rahasia seperti password, token, dan file konfigurasi rahasia tidak boleh dimasukkan ke repository publik.
+
+## 4. Catatan
+Kebutuhan nonfungsional ini menjadi standar kualitas yang harus diperhatikan selama proses pengembangan dan pengujian sistem BSIS.
