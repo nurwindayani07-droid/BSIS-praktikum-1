@@ -1,1 +1,38 @@
+# DOMAIN SCOPE BSIS
 
+## 1. Tujuan
+Dokumen ini menjelaskan pembagian domain atau bidang fungsional yang terdapat dalam BoardingSchool Information System (BSIS), beserta prioritas pengembangannya.
+
+## 2. Daftar Domain
+
+| Kode | Domain | Deskripsi | Prioritas |
+|---|---|---|---|
+| D01 | Authentication & User Management | Mengelola akun, login, role, dan hak akses pengguna. | MUST |
+| D02 | Public Website & CMS | Menampilkan profil, program, fasilitas, berita, galeri, dan informasi pesantren. | MUST |
+| D03 | PPDB | Mengelola pendaftaran, dokumen, seleksi, dan status penerimaan santri baru. | MUST |
+| D04 | Student & Guardian Management | Mengelola identitas santri dan hubungan santri dengan orang tua/wali. | MUST |
+| D05 | Academic Management | Mengelola kelas, mata pelajaran, nilai, dan kehadiran santri. | SHOULD |
+| D06 | Boarding Management | Mengelola asrama, kamar, penempatan santri, dan catatan kepesantrenan. | SHOULD |
+| D07 | Finance & Billing | Mengelola jenis biaya, tagihan, pembayaran, verifikasi, dan riwayat pembayaran. | MUST |
+| D08 | Allowance Management | Mengelola setoran, pengeluaran, saldo, dan riwayat uang jajan santri. | MUST |
+| D09 | Parent Portal | Menyediakan akses informasi akademik, kepesantrenan, tagihan, dan uang jajan kepada orang tua. | MUST |
+| D10 | Reporting & Dashboard | Menyediakan ringkasan informasi dan laporan pengelolaan pesantren. | SHOULD |
+
+## 3. Batasan Ruang Lingkup
+
+### Termasuk dalam MVP
+- Login dan pengelolaan hak akses dasar.
+- Website informasi publik.
+- Pendaftaran santri baru.
+- Pengelolaan data santri dan wali.
+- Pencatatan tagihan dan pembayaran secara manual atau simulasi.
+- Pencatatan transaksi uang jajan.
+- Portal orang tua dengan pembatasan akses berdasarkan relasi wali-santri.
+
+### Di Luar MVP
+- Integrasi payment gateway nyata.
+- Integrasi dengan layanan eksternal yang belum dibutuhkan.
+- Fitur tambahan yang tidak termasuk kebutuhan inti sistem.
+
+## 4. Catatan
+Prioritas domain merupakan rancangan awal dan dapat diperbaiki berdasarkan hasil diskusi dengan dosen atau tutor. Domain SHOULD dan COULD tidak boleh mengganggu penyelesaian kebutuhan MUST.
